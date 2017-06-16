@@ -1,8 +1,12 @@
 # Blog
-> 记录笔记，心得
+> 记录学习笔记，工作心得
 
 
-
+<p align="center">
+  <a href="https://github.com/wangyifen/blog">
+  <img width="202" alt="silkshadow's blog" src="https://cloud.githubusercontent.com/assets/8046480/14981004/d3108ee0-115e-11e6-8f35-b4320b214947.png">
+  </a>
+</p>
 
 
 
