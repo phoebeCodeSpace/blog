@@ -12,6 +12,7 @@
 
 ## js
 - [JavaScript的DOM操作](https://github.com/wangyifen/blog/issues/4)
+- [Array 对象方法整理](https://github.com/wangyifen/blog/issues/5)
 
 ## css
 - [css属性名太长记不住的备忘录](https://github.com/wangyifen/blog/issues/3)
