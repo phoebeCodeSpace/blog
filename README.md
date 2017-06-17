@@ -11,7 +11,7 @@
 
 
 ## js
-- [JavaScript的DOM操作](https://github.com/wangyifen/blog/issues/4)
+- [JavaScript DOM操作](https://github.com/wangyifen/blog/issues/4)
 - [Array 对象方法整理](https://github.com/wangyifen/blog/issues/5)
 
 ## css
