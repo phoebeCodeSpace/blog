@@ -17,5 +17,8 @@
 ## css
 - [css属性名太长记不住的备忘录](https://github.com/wangyifen/blog/issues/3)
 
+## vue
+- [vue-cli webpack 分析](https://github.com/wangyifen/blog/issues/6)
+
 ## tools
 - [atom插件——工欲善其事，必先利其器](https://github.com/wangyifen/blog/issues/2)
