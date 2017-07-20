@@ -1,0 +1,5 @@
+*, :after, :before {     -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+input,button{
+ 	-webkit-appearance: none; 
+}
