@@ -21,6 +21,7 @@
 
 ## vue
 - [vue-cli webpack 分析](https://github.com/wangyifen/blog/issues/6)
+- [https://github.com/wangyifen/blog/issues/22](https://github.com/wangyifen/blog/issues/22)
 
 ## tools
 - [atom插件——工欲善其事，必先利其器](https://github.com/wangyifen/blog/issues/2)
