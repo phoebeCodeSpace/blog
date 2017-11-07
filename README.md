@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/wangyifen/blog" style="color:#ffcc00;font-size:30px">
+  <a href="https://wangyifen.github.io/blog/" style="color:#ffcc00;font-size:30px">
   silkshadow's bolg
   </a>
 </p>
