@@ -25,3 +25,4 @@
 
 ## tools
 - [atom插件——工欲善其事，必先利其器](https://github.com/wangyifen/blog/issues/2)
+- [VSCode插件——工欲善其事，必先利其器](https://github.com/wangyifen/blog/issues/25)
