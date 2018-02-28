@@ -20,8 +20,10 @@
 - [1像素的执着](https://github.com/wangyifen/blog/issues/7)
 
 ## vue
+- [vue 迁移小记](https://github.com/phoebeCodeSpace/blog/blob/master/migration.md)
 - [vue-cli webpack 分析](https://github.com/wangyifen/blog/issues/6)
 - [vue中实现自定义音频播放器](https://github.com/wangyifen/blog/issues/22)
+- [vue 实现剪裁图片并上传服务器](https://github.com/phoebeCodeSpace/blog/blob/master/vue-croper.md)
 
 ## tools
 - [atom插件——工欲善其事，必先利其器](https://github.com/wangyifen/blog/issues/2)
