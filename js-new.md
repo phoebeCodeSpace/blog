@@ -32,6 +32,16 @@ const obj = { ...oldObj }
 const arr = [ ...oldArr ]
 ```
 
+## 多个异步处理顺序执行
+
+``` js
+   urls.reduce((previousValue, currentValue) => {
+        return previousValue.then(() => Axios.get(currentValue))
+    }, Promise.resolve())
+
+    // 实现如下效果
+     Promise.then(() => new Promise()).then(() => new Promise()).then(() => ...)
+```
 
 ### 参考：
 - [我未曾见过的 JS 特性](https://juejin.im/post/5a723216f265da3e2e62d0a5?utm_source=gold_browser_extension)
