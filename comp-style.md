@@ -4,9 +4,11 @@
 
 本文会包括以下几个方面：
 
-1. 样式目录结构
-2. 使用 CSS 预处理器
-3. Alert组件实践
+1. [样式目录结构](#样式目录结构)
+2. [使用 CSS 预处理器](#使用-css-预处理器)
+3. [Alert组件实践](#alert组件实践)
+    - [前置知识](#alert组件实践)
+    - [具体实现](#具体实现)
 
 ## 样式目录结构
 
@@ -41,16 +43,19 @@ styles/
 
 ## 使用 CSS 预处理器
 
-1. 定义变量
-    在运用`element`或`antd`UI组件库的时候，定制主题时根据变量修改值，可以轻松修改网站样式，可见定义主题变量的重要性。
-    [element-variables.scss](https://github.com/ElemeFE/element/blob/dev/packages/theme-chalk/src/common/var.scss)
-    [antd-default.less](https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less)
+1. 定义主题变量
+    - 定义主题变量便于制定网站统一风格。
+    - 根据变量文件可以很方便地调整网站整体样式，定制私有网站风格。
+    例如，在运用`element`或`antd`UI组件库的时候，定制主题时根据变量修改值：
+    - [element-variables.scss](https://github.com/ElemeFE/element/blob/dev/packages/theme-chalk/src/common/var.scss)
+    - [antd-default.less](https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less)
 2. 利用嵌套添加作用域空间
-   作用域空间的意义在于：
     - 给样式加上作用域空间可以避免组件样式影响外部的样式。
     - 保持组件文件名、组件样式名、样式作用域空间一致，可以很好的将其关联起来，便于开发者理解。
-3. 混合高效开发
-    对于重复样式用混合封装，提供开发效率。
+3. 利用混合高效开发
+    - 对于重复样式用混合封装，提高开发效率。
+    - 减少重复性代码，使代码更精简。
+4. 循环语句和判断语句实现样式可拓展性
 
 ## Alert组件实践
 
@@ -91,12 +96,13 @@ styles/
       extract(@list,@index)     // 获取列表第index项值
       tint(@color,@weight)      // 相当于mix(#ffffff, @color, @weight)
     ```
-### 实现效果
+
+### 具体实现
 
 通过传递不同type属性（`success`、`info`、`warning`、`error`），改变提示样式。
 ![alert-style](./comp-style/alert-style.png)
 
-### 主要布局
+#### 主要布局
 
 通过vue或react最终渲染出的html布局如下：
 
@@ -128,7 +134,7 @@ styles/
 1. 采用`@prefix-@widget`作为**命名空间** ，这里命名空间定义为`emic-alert`；
 2. 根据传递**类型**确定类名，不同类型Alert编译的类名分别为：`emic-alert-info`、`emic-alert-success`、`emic-alert-warning`、`emic-alert-error`，以同样的规则编译不同icon类型。
 
-### 变量定义
+#### 变量定义
 
 ``` less
 @prefix : emic;                 // 样式前缀
@@ -152,7 +158,7 @@ styles/
 
 ```
 
-### 循环遍历
+#### 循环遍历
 
 ``` less
 @alert-prefix-cls : ~"@{prefix}-alert";         // alert组件样式前缀
@@ -179,6 +185,27 @@ styles/
       }
     }
     .typesLoop(@len);
+}
+```
+
+如果用scss，循环会更加简单易懂：
+
+``` scss
+$alert-prefix-cls:#{$css-prefix}-alert;   // alert组件样式前缀
+.#{$alert-prefix-cls}{
+  // 其他代码
+  ...
+  // 定义类型
+  $type-list: (info:$primary-color, warning:$warning-color, success:$success-color, error:$error-color);
+  @each $type,$color in $type-list {
+    &-#{$type}{
+      background-color: mix($white-color, $color, $alert-bg-lighten);
+      border: 1px solid $color;
+    }
+    .icon-#{$type}{
+      color: $color;
+    }
+  }
 }
 ```
 
