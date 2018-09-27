@@ -16,6 +16,7 @@ Babel 通过语法转换器支持最新版本的 JavaScript 。 这些插件允�
   "plugins": []
 }
 ```
+
 [babel-handbook](https://github.com/jamiebuilds/babel-handbook/blob/master/translations/zh-Hans/user-handbook.md)
 [babel之配置文件.babelrc入门详解](https://juejin.im/post/5a79adeef265da4e93116430)
 [plugins](https://babeljs.cn/docs/plugins/)
