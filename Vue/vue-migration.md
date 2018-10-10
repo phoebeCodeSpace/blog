@@ -18,11 +18,11 @@
 
 大部分可以通过查找和替换 (find-and-replace) 来实现升级
 
-![image](./vue_migration/1.png)
+![image](./assets/1.png)
 
 修改的建议作为参考，根据具体情况进行修改。下图为`vue-migration-helper`提示错误，是外部调用的插件，本应该不需要修改。
 
-![image](./vue_migration/2.png)
+![image](./assets/2.png)
 
 因为 `Vue Router 2` 与 `Vue 2` 保持兼容，所以 `Vue Router` 必须升级的，对于 Vuex ，版本 0.8+ 与 Vue 2 保持兼容，所以部分不必强制升级。
 
@@ -140,7 +140,7 @@
 
 ## 4. 运行项目，根据错误提示继续修改
 
-![image](./vue_migration/3.png)
+![image](./assets/3.png)
 
 ## 5. 检查浏览器报错
 

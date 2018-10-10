@@ -10,11 +10,6 @@ UglifyJsPlugin：压缩代码
 
 ExtractTextPlugin：提取css出来
 
-
-
-
-
-
 ### webpack速度优化：
 
 1. 减少打包文件数量
@@ -53,11 +48,10 @@ ExtractTextPlugin：提取css出来
           })
         ```
 
-
 ## 
 
-
 ## 参考
+
 - [webpack+react+antd脚手架优化](https://juejin.im/post/5abe022ff265da238059c181#heading-2)
 - [移动spa商城优化记（一）---首屏优化篇](https://juejin.im/post/5aaf9e5cf265da239c7b2b93)
 - [移动spa商城优化记（二）--- 减少70%的打包等待时间](https://juejin.im/post/5abf13bf6fb9a028cc61577d)
